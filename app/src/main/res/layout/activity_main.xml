@@ -6,13 +6,261 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="0"
+        android:textSize="80sp"
+       android:textAlignment="textEnd"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="112dp"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="7"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="8"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="9"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-condensed"
+            android:text="+"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="4"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="5"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="6"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-condensed"
+            android:text="-"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="1"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="2"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="3"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-condensed"
+            android:text="*"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="0"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/buttonc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-condensed"
+            android:text="C"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-condensed"
+            android:text="="
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-condensed"
+            android:text="/"
+            android:textColor="#FCFFFF"
+            android:textSize="36sp"
+            app:layout_columnWeight="0.25"
+            app:layout_rowWeight="0.25"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
